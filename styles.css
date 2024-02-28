@@ -1,0 +1,116 @@
+/* styles.css */
+body {
+    font-family: 'Times New Roman', serif;
+    background: linear-gradient(to right, #99cc99 0%, #ffcc99 25%, #ffcc99 75%, #99cc99 100%);
+    color: #333; /* Цвет текста */
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    margin: 0 auto;
+    max-width: 1200px; /* Максимальная ширина контента */
+    padding: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование меню */
+    padding: 10px 0; /* Внутренний отступ сверху и снизу */
+}
+
+.nav-links {
+    list-style: none; /* Убираем стандартные маркеры списка */
+    display: flex; /* Элементы списка рядом друг с другом */
+    padding: 0; /* Сброс внутренних отступов */
+    margin: 0 0 10px; /* Сброс внешних отступов */
+    justify-content: center; /* Вертикальное выравнивание */
+}
+
+.nav-links li {
+    margin: 0 20px; /* Отступы между элементами списка */
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1e5c3d;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block; /* Для центрирования текста */
+}
+.nav-links a:hover, .nav-links a:focus {
+    color: #007bff; /* Цвет текста при наведении и фокусе */
+}
+
+.nav-links a:active {
+    color: #0056b3; /* Цвет текста при активном состоянии */
+}
+
+.nav-links:last-child {
+    margin-bottom: 0; /* Убираем нижний отступ у последней строки */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
+    justify-content: center; /* Выравнивание содержимого по центру */
+    text-align: center; /* Центрирование текста для дочерних элементов */
+    position: relative; /* Для позиционирования логотипа */
+}
+
+.logo {
+    width: 100px; /* Задайте необходимую ширину логотипа */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    position: absolute; /* Абсолютное позиционирование внутри родителя */
+    left: 20px; /* Отступ слева */
+    top: 50%; /* Центрирование по вертикали */
+    transform: translateY(-50%); /* Смещение для точного центрирования */
+}
+
+h1 {
+    font-size: 4em; /* Увеличение размера шрифта заголовка */
+    margin: 0; /* Убираем стандартные отступы */
+    width: 100%;
+    color: #1e5c3d;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em; /* Размер шрифта для подзаголовка */
+    color: #3d405b; /* Цвет текста для подзаголовка */
+    margin-top: 0; /* Убираем верхний отступ */
+    font-weight: bold; /* Делаем текст жирным */
+    font-style: italic; /* Делаем текст курсивным */
+    text-align: center; /* Центрирование текста заголовка h2 */
+}
+
+.paragraph-full-width {
+    text-align: center; /* Выравнивание текста по ширине */
+    font-size: 18px; /* Увеличение размера шрифта */
+    line-height: 1.6; 
+    color: #3d405b;
+}
+
+.images-container {
+    display: flex; /* Применяем Flexbox */
+    flex-wrap: wrap; /* Разрешаем элементам переноситься на новую строку */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    align-items: center; /* Центрирование содержимого по вертикали */
+}
+
+.images-container img {
+    width: 800px; /* Фиксированная ширина для всех изображений */
+    height: 600px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Обрезает изображение, сохраняя его пропорции, чтобы оно покрывало заданные размеры */
+    margin: 10px; /* Отступы вокруг изображений */
+    
+}
